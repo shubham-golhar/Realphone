@@ -1,1 +1,88 @@
-rrhrhr
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>REALPHONE</title>
+    <link rel="stylesheet" href="./real.css" />
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <nav>
+          <div class="logo">
+            <img src="./../images/left logo.jpeg" />
+          </div>
+          <div class="navbar">
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">PHONE</a></li>
+              <li><a href="#">ACCESSORIES</a></li>
+              <li><a href="#">CART</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="information">
+          <div class="overlay"></div>
+          <img src="./../images/mobile.jpeg" class="phone" />
+          <div id="circle">
+            <div class="feature one">
+              <img src="./../images/camera.jpeg" />
+              <div>
+                <h1>Display</h1>
+                <p>6.5" Mini-Drop fullscreen</p>
+              </div>
+            </div>
+            <div class="feature two">
+              <img src="./../images/battery.jpeg" />
+              <div>
+                <h1>Battery</h1>
+                <p>5000mAh, 720Hrs Standby</p>
+              </div>
+            </div>
+            <div class="feature three">
+              <img src="./../images/processor.jpeg" />
+              <div>
+                <h1>processor</h1>
+                <p>Snapdragon Octa-core 11nm</p>
+              </div>
+            </div>
+            <div class="feature four">
+              <img src="./../images/circle.jpeg" />
+              <div>
+                <h1>camera</h1>
+                <p>12MP,Wide Angle Lens</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="controls">
+         <img src="./../images/arrow.jpeg" id="uparrow">
+         <h3>Features</h3>
+         <img src="./../images/arrow.jpeg" id="downarrow">
+      </div>
+    </div>
+    </header>
+    <script> 
+    var circle= document.getElementById("circle")
+    var uparrow= document.getElementById("uparrow")
+    var downarrow= document.getElementById("downarrow")
+    var rotateValue= circle.style.transform;
+    var rotateSum;
+    uparrow.onclick =function () 
+    {
+      rotateSum =  rotateValue + "rotate(-90deg)";
+     circle.style.transform = rotateSum;
+     rotateValue = rotateSum;
+    }
+    downarrow.onclick =function () 
+    {
+      rotateSum =  rotateValue + "rotate(90deg)";
+     circle.style.transform = rotateSum;
+     rotateValue = rotateSum;
+    }
+    </script>
+  </body>
+</html>
+
