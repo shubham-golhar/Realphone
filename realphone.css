@@ -67,7 +67,6 @@ nav {
 .navbar ul li a:hover {
   color: darkcyan;
   background-color: lightblue;
-  border: 1px solid transparent;
 }
 .feature div {
   margin-left: 30px;
